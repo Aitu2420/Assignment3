@@ -1,0 +1,16 @@
+for connecting:
+
+1) psql -U postgres
+2) CREATE DATABASE zoo_db;
+3) \c zoo_db;
+4) CREATE TABLE Animal (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    diet VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    type VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Animal (name, diet, age, type) VALUES ('Ziggy', 'Plants', 3, 'Zebra');
+INSERT INTO Animal (name, diet, age, type) VALUES ('Simba', 'Meat', 5, 'Lion');
+INSERT INTO Animal (name, diet, age, type) VALUES ('Dumbo', 'Plants', 10, 'Elephant');
